@@ -40,9 +40,9 @@ Below is the pipeline of the proposed **BioIR framework**.
 
 Our method achieves strong performance on the **LoViF Challenge evaluation server**.
 
-| Method | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
-|------|------|------|------|
-| BioIR (ours) | XX.XX | X.XXX | X.XXX |
+| Method | Score ↑ | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
+|------|------|------|------|------|
+| BioIR (ours) | 35.05 | 24.93 | 0.79 | 0.35 |
 
 ---
 
