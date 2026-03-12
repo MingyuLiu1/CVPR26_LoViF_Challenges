@@ -112,9 +112,15 @@ The restored images will be saved in the output directory and can be submitted t
 
 ---
 
+Download the LIEDNet pretrained models and the qulitative results from:
+| Pretrained Checkpoint | Qulitative Results |
+| :-: | :-: |
+| [Google Drive](https://drive.google.com/file/d/1E-cawtOPai6KTTdyJ5SLEqblCl3Uuc7W/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/10Y3u4DUZU3GIAQCsjxuivUYj89GQmNIT/view?usp=sharing) |
+
 ## Citation
-```
+
 If you find our work useful, please consider citing:
+```
 @inproceedings{cuibio,
 title={Bio-Inspired Image Restoration},
 author={Cui, Yuning and Ren, Wenqi and Knoll, Alois},
