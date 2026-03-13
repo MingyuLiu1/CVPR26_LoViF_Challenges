@@ -1,37 +1,30 @@
-# BioIR for CVPR 2026 LoViF Challenge
+# VIVNet for CVPR 2026 LoViF Challenge
 
 This repository contains the official implementation used for the **CVPR 2026 LoViF Challenge on Real-World All-in-One Image Restoration**.
 
-Our solution is based on **BioIR**, a biologically inspired image restoration framework designed for efficient and universal image restoration.
+Our solution is based on **VIVNet**, a biologically inspired image restoration framework designed for efficient and universal image restoration.
 
-BioIR has been **accepted at NeurIPS 2025**.
+VIVNet has been **accepted at T-PAMI**.
 
 ---
 
 ## Method Overview
 
-Our challenge submission adopts **BioIR**, which models the interaction between **peripheral and foveal visual pathways** inspired by the human visual system.
+Our solution is based on VIVNet, a unified and efficient image restoration framework designed for handling diverse degradation scenarios. The network adopts a U-shaped architecture to extract hierarchical features while maintaining computational efficiency. Within each block, a brain-inspired module models key perceptual mechanisms of the human visual system. Specifically, the encoding stage captures multi-scale visual cues using depth-wise convolutions with different receptive fields. A similarity-aware weighting mechanism then emphasizes informative features through cosine-similarity-based adaptive weighting. Finally, high-order interactions are modeled via iterative element-wise multiplications combined with lightweight convolutions. This design enables strong representation capacity while preserving high computational efficiency for real-world restoration tasks.
 
-The framework introduces two bio-inspired modules:
+More details can be found in the VIVNet paper:
 
-- **Peripheral-to-Foveal (P2F):** delivers large-field contextual information to local regions.
-- **Foveal-to-Peripheral (F2P):** propagates fine-grained spatial details via dynamic integration.
-
-This interaction enables effective restoration under multiple degradations.
-
-More details can be found in the BioIR paper:
-
-**BioIR Paper:**  
-https://github.com/c-yn/BioIR
+**VIVNet Paper:**  
+[Paper link](https://ieeexplore.ieee.org/abstract/document/11419859)
 
 ---
 
-## BioIR Pipeline
+## VIVNet Pipeline
 
-Below is the pipeline of the proposed **BioIR framework**.
+Below is the pipeline of the proposed **VIVNet framework**.
 
 <p align="center">
-<img src="figures/bioir_pipeline.png" width="800">
+<img src="figures/vivnet_pipeline.png" width="800">
 </p>
 
 ---
@@ -42,7 +35,7 @@ Our method achieves strong performance on the **LoViF Challenge evaluation serve
 
 | Method | Score ↑ | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
 |------|------|------|------|------|
-| BioIR (ours) | 35.05 | 24.93 | 0.79 | 0.35 |
+| VIVNet (ours) | 35.05 | 24.93 | 0.79 | 0.35 |
 
 ---
 
@@ -121,10 +114,12 @@ Download the LIEDNet pretrained models and the qulitative results from:
 
 If you find our work useful, please consider citing:
 ```
-@inproceedings{cuibio,
-title={Bio-Inspired Image Restoration},
-author={Cui, Yuning and Ren, Wenqi and Knoll, Alois},
-booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems}
+@article{cui2026visual_vivnet,
+  title={Visual-in-Visual: A Unified and Efficient Baseline for Image Restoration},
+  author={Cui, Yuning and Ren, Wenqi and Shi, Boxin and Knoll, Alois},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2026},
+  publisher={IEEE}
 }
 ```
 ---
