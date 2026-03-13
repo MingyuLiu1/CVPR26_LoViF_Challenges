@@ -97,18 +97,19 @@ python train_eval.py --num_gpus 1 --batch_size 16
 
 ## Evaluation
 
-To run evaluation on the test set:
+Download the LIEDNet pretrained models and the qulitative results from:
+| Pretrained Checkpoint | Qulitative Results |
+| :-: | :-: |
+| [Google Drive](https://drive.google.com/file/d/1E-cawtOPai6KTTdyJ5SLEqblCl3Uuc7W/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/10Y3u4DUZU3GIAQCsjxuivUYj89GQmNIT/view?usp=sharing) |
+
+To run evaluation on the test set, please save the pretrained checkpoint in the `./checkpoints` folder and then run:
 ```
-python test.py
+python test.py --ckpt_name ./checkpoints/vivnet_lovif.ckpt --output_path $PATH_TO_SAVE_DATA$
 ```
 The restored images will be saved in the output directory and can be submitted to the LoViF evaluation server.
 
 ---
 
-Download the LIEDNet pretrained models and the qulitative results from:
-| Pretrained Checkpoint | Qulitative Results |
-| :-: | :-: |
-| [Google Drive](https://drive.google.com/file/d/1E-cawtOPai6KTTdyJ5SLEqblCl3Uuc7W/view?usp=sharing) | [Google Drive](https://drive.google.com/file/d/10Y3u4DUZU3GIAQCsjxuivUYj89GQmNIT/view?usp=sharing) |
 
 ## Citation
 
